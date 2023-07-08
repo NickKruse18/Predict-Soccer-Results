@@ -4,7 +4,7 @@ This package provides some functions to easily scrape game results from www.socc
 Please note that the predictions made in this package are in no way guaranteed to be accurate and they should not be taken as betting advice. This package is primarily a demonstration.
 
 
-To install the package in R use:\\
+To install the package in R use:\n
   install.packages("directory/poissoc_1.0.0.tar.gz",  repos = NULL,  type = "source")
   
   where 'directory' should be replaced with the file destination. Remember to replace any '\' with '/'

@@ -8,3 +8,6 @@ To install the package in R use: install.packages("directory/poissoc_1.0.0.tar.g
 
   
 To access the functions of the package it may be necessary to start every function call with poissoc::,  fx. to use the function SetupLeague type poissoc::SetupLeague.
+
+
+Every function has Rdocumentation so for more information about a function type fx. ?poissoc::FitTeams. 

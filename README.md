@@ -13,7 +13,7 @@ To access the functions of the package it may be necessary to start every functi
 Every function has Rdocumentation so for more information about a function type fx. ?poissoc::FitTeams. 
 
 
-Example:
+Example for finding odds for the 2023/2024 Premier League:
 
 
 install.packages("directory/poissoc_1.0.0.tar.gz",  repos = NULL,  type = "source") # Change "directory" to match

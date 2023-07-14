@@ -15,10 +15,17 @@ Every function has Rdocumentation so for more information about a function type 
 
 Example:
 
-Prem22 = poissoc::RetrieveLeague(2039)    #2039 is the ID for Premier League 2023/2024
+
+install.packages("directory/poissoc_1.0.0.tar.gz",  repos = NULL,  type = "source") # Change "directory" to match
 
 
-Matches = poissoc::RetrieveH2H(Prem22,2017,2022)    #Downloads every H2H match played between the teams in Premier League in the seasons from 2017/2018 to 2022/2023
+library(poissoc)
+
+
+Prem22 = poissoc::RetrieveLeague(2039)    #2039 is the ID in Soccerbase for Premier League 2023/2024. This can be changed to correspond to any league in any season.
+
+
+Matches = poissoc::RetrieveH2H(Prem22,2017,2022)    #Downloads every H2H match played between the teams in Premier League in the seasons from 2017/2018 to 2022/2023. This is quite slow because of Soccerbases loading times.
 
 
 Ratings = poissoc::FitTeams(Matches,Prem22)    #Fits the Poisson model to the games and gives every team a rating

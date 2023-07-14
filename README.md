@@ -15,7 +15,7 @@ Every function has Rdocumentation so for more information about a function type 
 
 Example:
 
-Prem22 = RetrieveLeague(2039)    #1944 is the ID for Premier League 2023/2024
+Prem22 = RetrieveLeague(2039)    #2039 is the ID for Premier League 2023/2024
 
 
 Matches = RetrieveH2H(Prem22,2017,2022)    #Downloads every H2H match played between the teams in Premier League in the seasons from 2017/2018 to 2022/2023

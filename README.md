@@ -22,16 +22,16 @@ install.packages("directory/poissoc_1.0.0.tar.gz",  repos = NULL,  type = "sourc
 library(poissoc)
 
 
-Prem22 = poissoc::RetrieveLeague(2039)    #2039 is the ID in Soccerbase for Premier League 2023/2024. This can be changed to correspond to any league in any season.
+Prem23 = poissoc::RetrieveLeague(2039)    #2039 is the ID in Soccerbase for Premier League 2023/2024. This can be changed to correspond to any league in any season.
 
 
-Matches = poissoc::RetrieveH2H(Prem22,2017,2022)    #Downloads every H2H match played between the teams in Premier League in the seasons from 2017/2018 to 2022/2023. This is quite slow because of Soccerbases loading times.
+Matches = poissoc::RetrieveH2H(Prem23,2017,2022)    #Downloads every H2H match played between the teams in Premier League in the seasons from 2017/2018 to 2022/2023. This is quite slow because of Soccerbases loading times.
 
 
-Ratings = poissoc::FitTeams(Matches,Prem22)    #Fits the Poisson model to the games and gives every team a rating
+Ratings = poissoc::FitTeams(Matches,Prem23)    #Fits the Poisson model to the games and gives every team a rating
 
 
-ToPlay = poissoc::SetGames(Prem22)    #Sets games in the standard league format: Every team plays twice against every other team, once as home and once as away.
+ToPlay = poissoc::SetGames(Prem23)    #Sets games in the standard league format: Every team plays twice against every other team, once as home and once as away.
 
 
-Odds = poissoc::PredictGames(Ratings,ToPlay,Prem22)    #Gives odds for every game in ToPlay and odds for the final standings
+Odds = poissoc::PredictGames(Ratings,ToPlay,Prem23)    #Gives odds for every game in ToPlay and odds for the final standings
